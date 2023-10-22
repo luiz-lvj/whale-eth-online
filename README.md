@@ -189,7 +189,7 @@ Registry address: 0x4382D1FD418192929cfB2ec44dd7bB8d630C3785
 
 ### Deploy
 
-[Deploy Link](https://www.loom.com/share/6913cf323b4644cfbcb3133377d3ca2c?sid=17cfc3fb-4d68-4b81-a225-4d8d25e18772)
+[Deploy Link](https://whale-eth-online.vercel.app/)
 
 ### How to run locally steps
 
