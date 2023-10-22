@@ -41,8 +41,8 @@ export default function DashboardId({ account, signer }:
     const [fund, setFund] = useState<FundData | null>(null);
     const [data, setData] = useState<CombinedDataItem[]>([]);
 
-    const [tokenA, setTokenA] = useState("BTTCUSD");
-    const [tokenB, setTokenB] = useState("BTTCUSD");
+    const [tokenA, setTokenA] = useState("SUSD");
+    const [tokenB, setTokenB] = useState("SUSD");
 
 
 

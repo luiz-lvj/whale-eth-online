@@ -324,7 +324,7 @@ export default function FundId({ account, provider, signer }: FundIdProps) {
                                 </div>
                                 <div className='flex flex-col bg-slate-100 p-4 mb-8 rounded-[10px] space-y-1'>
                                         <div className='grid grid-cols-2'>
-                                            <h3 className='italic'>Your BTTCUSD Balance:</h3>
+                                            <h3 className='italic'>Your SUSD Balance:</h3>
                                             <div className='flex flex-row items-center justify-center'>
                                                 <p className='font-bold text-blue-color'>{Number(zusdBalance).toFixed(2)}</p>
                                             </div>

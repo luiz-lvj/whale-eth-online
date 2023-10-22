@@ -17,7 +17,7 @@ contract Create is Script {
         vm.startBroadcast(vm.envUint("PRIVATE_KEY"));
 
         zusd = new MockERC20("WETH", "WETH");
-        zusd.mint(0x0CCfc28Ce76f48726C59Fc2a598b6eAac8bd3Ab4, 100 ether);
+        zusd.mint(0xD1081E9c439a495405b02DBc2410c3D13C135BEf, 100000000 ether);
 
 
         console.log("ZUSD address: %s", address(zusd));
