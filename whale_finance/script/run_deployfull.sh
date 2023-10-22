@@ -1,1 +1,1 @@
-forge script ./DeployFull.s.sol --rpc-url $BTTC_RPC_URL --broadcast --legacy
+forge script ./DeployFull.s.sol --rpc-url $SEPOLIA_RPC_URL  --broadcast --etherscan-api-key  ethereum-sepolia --verify -vvvv

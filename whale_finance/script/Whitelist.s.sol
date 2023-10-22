@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.20;
+pragma solidity ^0.8.13;
 
 import "forge-std/Script.sol";
 import "forge-std/console.sol";
@@ -7,13 +7,13 @@ import "forge-std/console.sol";
 import "../src/ERC6551Registry.sol";
 import "../src/SafeAccount.sol";
 import "../src/interface/IERC6551Account.sol";
-import "../src/MarFinance.sol";
+import "../src/WhaleFinance.sol";
 import "../src/QuotaBeacon.sol";
 import "../src/MockERC20.sol";
 
 contract Deploy is Script {
 
-    MarFinance public marFinance;
+    WhaleFinance public whaleFinance;
 
 
 
@@ -22,10 +22,10 @@ contract Deploy is Script {
     function run() external {
         vm.startBroadcast(vm.envUint("PRIVATE_KEY"));
 
-        address token = 0x9c00d4f278Cb6fa3c4A137F7FedfB514a7655928;
+        address token = 0x74DC1C4ec10abE9F5C8A3EabF1A90b97cDc3Ead8;
 
-        marFinance = MarFinance(0x49EbBc5a9364F25284875A201AA39E657E90c5C6);
-        marFinance.setWhiteListedToken(address(token));
+        whaleFinance = WhaleFinance(0xE7fB04eA857F9F96939fc98bD17Ff88ce8b0AdF0);
+        whaleFinance.setWhiteListedToken(address(token));
 
         vm.stopBroadcast();
         
