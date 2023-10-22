@@ -192,7 +192,7 @@ export default function Investor() {
                                 <button
                                 className="my-4 bg-gradient-to-r from-blue-color to-secondary-color text-white font-bold rounded-full border-2 border-transparent py-2 px-20 shadow-lg uppercase tracking-wider hover:from-white hover:to-white hover:text-secondary-color hover:border-secondary-color transition duration-1000 ease-in-out" onClick={handleClick}
                                 >
-                                    Use Mar Finance
+                                    Use Whale Finance
                                 </button>
                             </div>
                         </div>

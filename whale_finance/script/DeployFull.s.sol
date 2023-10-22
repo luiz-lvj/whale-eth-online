@@ -34,10 +34,13 @@ contract Deploy is Script {
         beacon = new BeaconERC20(address(quotaTokenImplementation)); //quota
 
         whaleFinance = new WhaleFinance(address(registry), address(safeAccount), address(beacon), address(stablecoin));
-        whaleFinance.setWhiteListedToken(address(stablecoin));
 
         console.log("Stablecoin address: %s", address(stablecoin));
         console.log("WhaleFinance address: %s", address(whaleFinance));
+        console.log("QuotaToken address: %s", address(quotaTokenImplementation));
+        console.log("QuotaBeacon address: %s", address(beacon));
+        console.log("SafeAccount address: %s", address(safeAccount));
+        console.log("Registry address: %s", address(registry));
 
         vm.stopBroadcast();
         

@@ -1,1 +1,1 @@
-forge script ./Deploy1.s.sol --rpc-url https://smart.zeniq.network:9545  --broadcast --legacy
+forge script ./Deploy1.s.sol --rpc-url $SCROLL_SEPOLIA_RPC_URL  --broadcast --legacy
